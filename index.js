@@ -5,7 +5,7 @@ Study the code below and explain in your own words why nested function can acces
 const external = "I'm outside the function";
 
 function myFunction() {
-  console.log(external);
+  // console.log(external);
   const internal = "Hello! I'm inside myFunction!";
 
   function nestedFunction() {
@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//Because the nested function is included in the outer function scope.
 
 
 
@@ -28,10 +28,11 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(n) {
+  return n * (n + 1) / 2;
+}
 
-  }
+console.log(summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -56,9 +57,24 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(zooAnimals) {
+    // let displayNames = []
+    // zooAnimals.forEach(element => {
+    //   displayNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)
+    // });
+    // return displayNames
   }
+
+// let frontDisplay = []
+//   zooAnimals.forEach((animal) => {
+//     let pushItem = {
+//       name: animal.animal_name,
+//       scientific: animal.scientific_name
+//     };
+//     frontDisplay.push(pushItem);
+// })
+
+// console.log(frontDisplay);
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -67,15 +83,18 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
-  
+  // let newArray = zooAnimals.map((item) => {
+  //   return item.animal_name.toLowerCase();
+  // });
+
+  // console.log(newArray);
+
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
+
 
   function lowPopulationAnimals(/*Your Code Here*/){
     /*Your Code Here*/
@@ -87,6 +106,7 @@ const zooAnimals = [
   Using USApop find the total population from the zoos array using the .reduce() method. 
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
+
 
   function USApop(/*Your Code Here*/){
     /*Your Code Here*/
@@ -101,17 +121,19 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
-  }
- 
+  // const arr1 = ['a', 'b', 'c'];
+  // function consume(arr){
+  //   /*Your Code Here */
+  // }
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(/*Your Code Here */){
-    /*Your Code Here*/
-  }
+
+ function consume(/*Your Code Here */){
+  /*Your Code Here */
+}
+
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
